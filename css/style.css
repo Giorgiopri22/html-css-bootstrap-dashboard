@@ -42,6 +42,7 @@ aside{
 
 aside a{
     color: white;
+    padding: 5px;
 }
 
 aside a:hover{
