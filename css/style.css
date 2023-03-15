@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#viewport{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.btn-secondary{
+    border: 0;
+    background-color: white;
+}
+
+.dropstart{
+    display: inline-block;
+}
+
+.fa-bell{
+    color:yellow;
+}
+
+header{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+aside{
+    height: calc(100vh - 70px);
+    width: 100px;
+    margin-top: 70px;
+    color: white;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+}
+
+aside a{
+    color: white;
+}
+
+aside a:hover{
+    background-color: lightgrey;
+}
+
+main{
+    height: calc(100% - 70px);
+    width: calc(100% - 100px);
+    margin-top: 70px;
+    overflow: auto;
+}
+
+#blue-section{
+    background-color: rgba(14, 79, 221, 0.986);
+}
+
+
+
+.card{   
+    border:1px solid black;
+}
+
+.table{
+    width: 98%;
+    border: 1px solid black;
+    border-right: 0;
+    border-left: 0;
+    margin: auto;
+}
+
+#col-w-60{
+    width: 55%;   
+}
+
+td i{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+th i{
+    background-color: orangered;
+    border:1px solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+#faq{
+    width: 98%;
+    margin: auto;
+}
+
+
+#checkbox,
+#grafico{
+    width: 95%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius:5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#offcanvasRight{
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .hidden-col{
+        display: none;
+    }
+    #offcanvasRight{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .special{
+        order: -1;
+    }
+    #offcanvasRight{
+        width: 100%;
+    }
+}
